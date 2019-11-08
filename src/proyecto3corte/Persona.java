@@ -5,7 +5,6 @@
  */
 package proyecto3corte;
 
-import java.util.Date;
 
 /**
  *
@@ -15,7 +14,7 @@ public class Persona {
     private String nombre;
     private String apellido;
     private int id;
-    private Date nacimiento;
+    private String nacimiento;
     private String direccion;
     private String email;
     private String genero;
@@ -24,7 +23,7 @@ public class Persona {
     private String profesion;
     private String nivelEducativo;
 
-    public Persona(String nombre, String apellido, int id, Date nacimiento, String direccion, String email, String genero, int NHijos, String estadoCivil, String profesion, String nivelEducativo) {
+    public Persona(String nombre, String apellido, int id, String nacimiento, String direccion, String email, String genero, int NHijos, String estadoCivil, String profesion, String nivelEducativo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.id = id;
@@ -62,11 +61,11 @@ public class Persona {
         this.id = id;
     }
 
-    public Date getNacimiento() {
+    public String getNacimiento() {
         return nacimiento;
     }
 
-    public void setNacimiento(Date nacimiento) {
+    public void setNacimiento(String nacimiento) {
         this.nacimiento = nacimiento;
     }
 

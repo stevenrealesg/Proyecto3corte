@@ -5,24 +5,25 @@
  */
 package proyecto3corte;
 
-import java.util.Date;
 
 /**
  *
  * @author Soporte_lab
  */
-public class Empleado {
+public class Empleado extends Persona{
     
     private String cargo;
-    private Date fechaDeIngreso;
-    private Date fechaDeSalida;
+    private String fechaDeIngreso;
+    private String fechaDeSalida;
     private String tipoContrato;
     private String ARL;
     private String EPS;
     private String cesantias;
-    private String pension;
+    private String pension;    
+    
 
-    public Empleado(String cargo, Date fechaDeIngreso, Date fechaDeSalida, String tipoContrato, String ARL, String EPS, String cesantias, String pension) {
+    public Empleado(String nombre, String apellido, int id, String nacimiento, String direccion, String email, String genero, int NHijos, String estadoCivil, String profesion, String nivelEducativo, String cargo, String fechaDeIngreso, String fechaDeSalida, String tipoContrato, String ARL, String EPS, String cesantias, String pension) {
+        super(nombre, apellido, id, nacimiento, direccion, email, genero, NHijos, estadoCivil, profesion, nivelEducativo);
         this.cargo = cargo;
         this.fechaDeIngreso = fechaDeIngreso;
         this.fechaDeSalida = fechaDeSalida;
@@ -33,6 +34,8 @@ public class Empleado {
         this.pension = pension;
     }
 
+    
+
     public String getCargo() {
         return cargo;
     }
@@ -41,19 +44,19 @@ public class Empleado {
         this.cargo = cargo;
     }
 
-    public Date getFechaDeIngreso() {
+    public String getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(Date fechaDeIngreso) {
+    public void setFechaDeIngreso(String fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 
-    public Date getFechaDeSalida() {
+    public String getFechaDeSalida() {
         return fechaDeSalida;
     }
 
-    public void setFechaDeSalida(Date fechaDeSalida) {
+    public void setFechaDeSalida(String fechaDeSalida) {
         this.fechaDeSalida = fechaDeSalida;
     }
 
